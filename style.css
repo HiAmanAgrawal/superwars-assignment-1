@@ -1,0 +1,45 @@
+* {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+#container {
+  width: 98vw;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr 1fr;
+  justify-content: space-between;
+  /* padding: 2vw; */
+}
+#hero,
+#villan {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* padding: 12px auto; */
+}
+#score {
+  text-align: center;
+}
+
+.hero,
+.villan {
+  display: inline-block;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px auto;
+  padding: 20px;
+}
+.footer {
+  margin-left: 80px;
+  font-size: 18px;
+}
+@media (max-width: 900px) {
+  #hero,
+  #villan {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 900px) {
+  #hero,
+  #villan {
+    grid-template-columns: 1fr;
+  }
+}
